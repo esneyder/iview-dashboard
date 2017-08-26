@@ -81,4 +81,4 @@ Tenga cualquier pregunta o sugerencia bienvenida a la edición del problema.
 ---------------
 
 ### Licencia
-[MIT] (https://opensource.org/licenses/MIT)
+[MIT](https://opensource.org/licenses/MIT)
