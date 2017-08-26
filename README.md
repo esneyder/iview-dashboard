@@ -27,31 +27,31 @@ npm run build  // producción
 ----------------
 
 ### estructura de directorios
-|--build                        // archivo de configuración de webpack
-|--config                       // ruta del paquete del proyecto
-|--static                       // directorio de archivos estáticos
-|--src                          // directorio de fuentes
-|  |--componentes               // componentes
-|      |--common                // globales
-|          |--about.vue         // acerca de
-|          |--index             // inicio
-|          |--login.vue         // inicio de sesión
-|     |--page                   //Paginas
-|       |--Eharts.vue           // baidu echarts
-|       |--form.vue             // formulario
-|       |--Rtf.vue              // cuadro de texto enriquecido
-|       |--Markdown-viewer.vue  // exhibición de markdown
-|       |--markdown-editor.vue  // editor de markdown
-|       |--tablas               // tablas
-|       |__upload.vue           // archivo de carga
-|   |--App.vue                  // entrada de página
-|   |--main.js                  // entrada del programa
-|--.babelrc                     // ES6 Configuración de la compilación de sintaxis
-|--.editorconfig                // código para escribir especificaciones
-|--.gitignore                   // push Ignora los archivos
-|--index.html                   // entrada página html
-|--package.json                 // dependencias y configuración
-|--README.md                    // Introducción
+  |--build                        // archivo de configuración de webpack
+  |--config                       // ruta del paquete del proyecto
+  |--static                       // directorio de archivos estáticos
+  |--src                          // directorio de fuentes
+  |  |--componentes               // componentes
+  |      |--common                // globales
+  |          |--about.vue         // acerca de
+  |          |--index             // inicio
+  |          |--login.vue         // inicio de sesión
+  |     |--page                   //Paginas
+  |       |--Eharts.vue           // baidu echarts
+  |       |--form.vue             // formulario
+  |       |--Rtf.vue              // cuadro de texto enriquecido
+  |       |--Markdown-viewer.vue  // exhibición de markdown
+  |       |--markdown-editor.vue  // editor de markdown
+  |       |--tablas               // tablas
+  |       |--upload.vue           // archivo de carga
+  |   |--App.vue                  // entrada de página
+  |   |--main.js                  // entrada del programa
+  |--.babelrc                     // ES6 Configuración de la compilación de sintaxis
+  |--.editorconfig                // código para escribir especificaciones
+  |--.gitignore                   // push Ignora los archivos
+  |--index.html                   // entrada página html
+  |--package.json                 // dependencias y configuración
+  |--README.md                    // Introducción
 
 ----------------
 
