@@ -1,5 +1,5 @@
 # Iview-Dashboard
-Un ejemplo sencillo de dashboard basada en Vue2 + iView2.0.
+> Un ejemplo sencillo de dashboard basada en Vue2 + iView2.0.
 [Demo](https://iview-dashboard.herokuapp.com)
 
 ----------------
