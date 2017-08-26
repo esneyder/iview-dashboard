@@ -58,15 +58,16 @@ Forma - form.vue // formulario
 Al mismo tiempo que
 --------------
 
-Vista previa de la captura de pantalla ###
-! [1] (https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s1.png)
+### Vista previa de la captura de pantalla
+![1] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s1.png)
 
-! [2] (https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s2.png)
+![2] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s2.png)
 
-[3] (https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s3.png)
+![3] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s3.png)
+
+![4] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s4.png)
 
 ----------------
-
 ### Problemas y instrucciones de mantenimiento
 1. La ruta de la fuente es incorrecta y la próxima actualización será fija
 
