@@ -1,109 +1,112 @@
 <template>
-    <Table border :content="self" :columns="columns7" :data="data6"></Table>
+  <Table border :columns="columns7" :data="data6"></Table>
 </template>
 <script>
-    export default {
-        data () {
-            return {
-                self: this,
-                columns7: [
-                    {
-                        title: '姓名',
-                        key: 'name',
-                        render (row, column, index) {
-                            return `<Icon type="person"></Icon> <strong>${row.name}</strong>`;
-                        }
-                    },
-                    {
-                        title: '年龄',
-                        key: 'age'
-                    },
-                    {
-                        title: '地址',
-                        key: 'address'
-                    },
-                    {
-                        title: '操作',
-                        key: 'action',
-                        width: 150,
-                        align: 'center',
-                        render (row, column, index) {
-                            return `<i-button type="primary" size="small" @click.native="show(${index})">查看</i-button> <i-button type="error" size="small" @click="remove(${index})">删除</i-button>`;
-                        }
-                    }
-                ],
-                data6: [
-                    {
-                        name: '王小明',
-                        age: 18,
-                        address: '北京市朝阳区芍药居'
-                    },
-                    {
-                        name: '张小刚',
-                        age: 25,
-                        address: '北京市海淀区西二旗'
-                    },
-                    {
-                        name: '李小红',
-                        age: 30,
-                        address: '上海市浦东新区世纪大道'
-                    },
-                    {
-                        name: '周小伟',
-                        age: 26,
-                        address: '深圳市南山区深南大道'
-                    },{
-                        name: '王小明',
-                        age: 18,
-                        address: '北京市朝阳区芍药居'
-                    },
-                    {
-                        name: '张小刚',
-                        age: 25,
-                        address: '北京市海淀区西二旗'
-                    },
-                    {
-                        name: '李小红',
-                        age: 30,
-                        address: '上海市浦东新区世纪大道'
-                    },
-                    {
-                        name: '周小伟',
-                        age: 26,
-                        address: '深圳市南山区深南大道'
-                    },{
-                        name: '王小明',
-                        age: 18,
-                        address: '北京市朝阳区芍药居'
-                    },
-                    {
-                        name: '张小刚',
-                        age: 25,
-                        address: '北京市海淀区西二旗'
-                    }
-                ]
+  export default {
+    data () {
+      return {
+        columns7: [
+          {
+            title: 'Nombre',
+            key: 'name',
+            render: (h, params) => {
+              return h('div', [
+                h('Icon', {
+                  props: {
+                    type: 'person'
+                  }
+                }),
+                h('strong', params.row.name)
+              ]);
             }
-        },
-        methods: {
-            show (index) {
-                this.$Modal.info({
-                    title: '用户信息',
-                    content: `姓名：${this.data6[index].name}<br>年龄：${this.data6[index].age}<br>地址：${this.data6[index].address}`
-                })
-            },
-            remove (index) {
-                this.data6.splice(index, 1);
-            },
-            // setActive(){
-            //   console.log('g');
-            //   console.log(this.$parent.data);
-            //   this.$emit()
-            // }
-        },
-        // mounted() {
-        //   this.$nextTick(function() {
-        //     this.setActive()
-        //   })
-        // }
+          },
+          {
+            title: 'Edad',
+            key: 'age'
+          },
+          {
+            title: 'Direccion',
+            key: 'address'
+          },
+          {
+            title: 'Operación',
+            key: 'action',
+            width: 150,
+            align: 'center',
+            render: (h, params) => {
+              return h('div', [
+                h('Button', {
+                  props: {
+                    type: 'primary',
+                    size: 'small'
+                  },
+                  style: {
+                    marginRight: '5px'
+                  },
+                  on: {
+                    click: () => {
+                      this.show(params.index)
+                    }
+                  }
+                }, 'Detalle'),
+                h('Button', {
+                  props: {
+                    type: 'error',
+                    size: 'small'
+                  },
+                  on: {
+                    click: () => {
+                      this.remove(params.index)
+                    }
+                  }
+                }, 'Borrar')
+              ]);
+            }
+          }
+        ],
+        data6: [
+          {
+            name: 'Daniel Lopez',
+            age: 18,
+            address: 'Caracas'
+          },
+          {
+            name: 'Maria Marcano',
+            age: 25,
+            address: 'Maturin'
+          },
+          {
+            name: 'Jose Perez',
+            age: 30,
+            address: 'Carupano'
+          },
+          {
+            name: 'Otoniela',
+            age: 26,
+            address: 'Valencia'
+          },{
+            name: 'Gregorys Arcia',
+            age: 18,
+            address: 'Merida'
+          },
+          {
+            name: 'Jhon Garcia',
+            age: 25,
+            address: 'Upata'
+          }
+        ]
+      }
+    },
+    methods: {
+      show (index) {
+        this.$Modal.info({
+          title: 'Información del usuario',
+          content: `Nombre：${this.data6[index].name}<br>Edad：${this.data6[index].age}<br>Dirección：${this.data6[index].address}`
+        })
+      },
+      remove (index) {
+        this.data6.splice(index, 1);
+      }
     }
+  }
 </script>

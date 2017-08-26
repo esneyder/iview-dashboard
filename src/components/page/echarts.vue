@@ -7,11 +7,8 @@
     width: 500px;
     height: 400px;
 }
-
 </style>
-
 <template>
-
 <div class="echarts">
     <div class="echarts-item">
         <IEcharts :option="pie"></IEcharts>
@@ -26,13 +23,9 @@
         <IEcharts :option="bar"></IEcharts>
     </div>
 </div>
-
 </template>
-
 <script>
-
 import IEcharts from 'vue-echarts-v3';
-
 export default {
     components: {
         IEcharts
@@ -40,24 +33,24 @@ export default {
     data: () => ({
         line: {
             title: {
-                text: '曲线图'
+                text: 'Curva'
             },
             xAxis: {
-                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+                data: ["Camisa", "sudadera", "camisa de gasa", "pantalones", "tacones altos", "calcetines"]
             },
             yAxis: {},
             series: [{
-                name: "销量",
+                name: "Ventas",
                 type: "line",
                 data: [5, 20, 36, 10, 10, 20]
             }]
         },
         bar: {
             title: {
-                text: '柱状图'
+                text: 'Histograma'
             },
             xAxis: {
-                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+                data: ["Camisa", "sudadera", "camisa de gasa", "pantalones", "tacones altos", "calcetines"]
             },
             yAxis: {},
             series: [{
@@ -69,7 +62,7 @@ export default {
         pie: {
 
             title: {
-                text: '饼状图',
+                text: 'Gráfico circular',
                 x: 'center'
             },
             tooltip: {
@@ -79,28 +72,28 @@ export default {
             legend: {
                 orient: 'vertical',
                 left: 'left',
-                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋"]
+                data: ["Camisa", "suéter", "camisa de gasa", "pantalones", "tacones altos"]
             },
             series: [{
-                name: '销量',
+                name: 'Ventas',
                 type: 'pie',
                 radius: '55%',
                 center: ['50%', '50%'],
                 data: [{
                     value: 335,
-                    name: '衬衫'
+                    name: 'Camisa'
                 }, {
                     value: 310,
-                    name: '羊毛衫'
+                    name: 'Suéter'
                 }, {
                     value: 234,
-                    name: '雪纺衫'
+                    name: 'Camisa de gasa'
                 }, {
                     value: 135,
-                    name: '裤子'
+                    name: 'Pantalones'
                 }, {
                     value: 548,
-                    name: '高跟鞋'
+                    name: 'Tacones altos'
                 }],
                 itemStyle: {
                     emphasis: {
@@ -114,7 +107,7 @@ export default {
         pie_radius: {
 
             title: {
-                text: '环形图',
+                text: 'Diagrama de anillo',
                 x: 'center'
             },
             tooltip: {
@@ -124,27 +117,27 @@ export default {
             legend: {
                 orient: 'vertical',
                 left: 'left',
-                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋"]
+                data: ["Camisa", "suéter", "camisa de gasa", "pantalones", "tacones altos"]
             },
             series: [{
-                name: '销量',
+                name: 'Ventas',
                 type: 'pie',
                 radius: ['40%', '60%'],
                 data: [{
                     value: 335,
-                    name: '衬衫'
+                    name: 'Camisa'
                 }, {
                     value: 310,
-                    name: '羊毛衫'
+                    name: 'Suéter'
                 }, {
                     value: 234,
-                    name: '雪纺衫'
+                    name: 'Camisa de gasa'
                 }, {
                     value: 135,
-                    name: '裤子'
+                    name: 'Pantalones'
                 }, {
                     value: 548,
-                    name: '高跟鞋'
+                    name: 'Tacones altos'
                 }],
                 itemStyle: {
                     emphasis: {
@@ -157,5 +150,4 @@ export default {
         }
     })
 }
-
 </script>

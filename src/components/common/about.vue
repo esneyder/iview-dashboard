@@ -10,7 +10,7 @@
 <template>
 
 <div class="about">
-    <vue-markdown># Sistema de gestión de fondo</vue-markdown>
+    <vue-markdown># Iview Dashboard</vue-markdown>
     <vue-markdown>-------------------</vue-markdown>
     <vue-markdown>### Basado en Vue2 + iView2.0 </vue-markdown>
     <br/><br/>

@@ -1,14 +1,13 @@
 <style scoped>
-
 .wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     padding-top: 150px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
     /*background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));*/
-    /*background: #fff;*/
-    /*url(http://78rbeb.com1.z0.glb.clouddn.com/wp-content/uploads/2014/03/free-blurred-web-backgrounds-04.jpg);*/
+    /*background: #1c2438;*/
+    background-image: url('../../assets/img/free-blurred-web-backgrounds-04.jpg')
 }
 .wrapper > h1{
   text-align: center;
@@ -19,18 +18,13 @@
 .login {
     margin: 0 auto;
     padding: 200px auto;
-    width: 200px;
+    width: 300px;
     height: 100%;
 }
-
 </style>
-
 <template>
-
-<div class="wrapper">
-<h1>
-  Sistema de gestión de fondo
-</h1>
+<div class="wrapper" >
+<h1 style="font-family: Consolas">IVIEW DASHBOARD</h1>
     <div class="login">
         <i-form ref="formInline" :model="formInline" :rules="ruleInline">
             <Form-item prop="user">
@@ -45,7 +39,6 @@
         </i-form>
     </div>
 </div>
-
 </template>
 
 <script>

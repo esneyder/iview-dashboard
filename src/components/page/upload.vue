@@ -5,14 +5,14 @@
 </style>
 <template>
     <div>
-      <h1>使用iView自带的文件上传组件，方便快捷</h1>
+      <h1>Utilice iView para cargar archivos propios, cómodos y rápidos</h1>
       <Upload
           multiple
           type="drag"
           action="//jsonplaceholder.typicode.com/posts/">
           <div style="padding: 20px 0">
               <Icon type="ios-cloud-upload" size="52" style="color: #3399ff"></Icon>
-              <p>点击或将文件拖拽到这里上传</p>
+              <p>Haga clic o arrastre el archivo aquí para cargarlo</p>
           </div>
       </Upload>
     </div>

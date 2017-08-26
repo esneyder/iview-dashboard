@@ -75,18 +75,18 @@
         <i-col :span="spanLeft" class="layout-menu-left">
             <Menu :active-name="setActive" theme="dark" width="auto" @on-select="routeTo">
                 <div class="layout-logo-left">
-                    <h3>Gestión de antecedentes</h3></div>
+                    <h3>Dashboard</h3></div>
                 <Menu-item name="about">
                     <Icon type="ios-navigate" :size="iconSize"></Icon>
                     <span class="layout-text">Acerca de</span>
                 </Menu-item>
                 <Menu-item name="form">
                     <Icon type="document" :size="iconSize"></Icon>
-                    <span class="layout-text">Forma</span>
+                    <span class="layout-text">Formulario</span>
                 </Menu-item>
                 <Menu-item name="table">
                     <Icon type="navicon" :size="iconSize"></Icon>
-                    <span class="layout-text">Forma</span>
+                    <span class="layout-text">Tabla</span>
                 </Menu-item>
                 <Menu-item name="markdown-viewer">
                     <Icon type="social-markdown" :size="iconSize"></Icon>
@@ -94,23 +94,23 @@
                 </Menu-item>
                 <Menu-item name="markdown-editor-1">
                     <Icon type="edit" :size="iconSize"></Icon>
-                    <span class="layout-text">Md editor (1)</span>
+                    <span class="layout-text">Editor Md 1</span>
                 </Menu-item>
                 <Menu-item name="markdown-editor-2">
                     <Icon type="edit" :size="iconSize"></Icon>
-                    <span class="layout-text">Editor Md (2)</span>
+                    <span class="layout-text">Editor Md 2</span>
                 </Menu-item>
                 <Menu-item name="rtf">
                     <Icon type="document-text" :size="iconSize"></Icon>
-                    <span class="layout-text">Cuadro de texto enriquecido</span>
+                    <span class="layout-text">Editor de Texto</span>
                 </Menu-item>
                 <Menu-item name="upload">
                     <Icon type="ios-cloud-upload-outline" :size="iconSize"></Icon>
-                    <span class="layout-text">Subida de archivo</span>
+                    <span class="layout-text">Subir Archivo</span>
                 </Menu-item>
                 <Menu-item name="echarts">
                     <Icon type="pie-graph" :size="iconSize"></Icon>
-                    <span class="layout-text">Gráficos</span>
+                    <span class="layout-text">Gráficas</span>
                 </Menu-item>
             </Menu>
         </i-col>
