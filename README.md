@@ -29,6 +29,7 @@ npm run build
 ----------------
 
 ### Dependencias
+- [Repo Original](https://github.com/vanishcode/iview2-management-system)
 - [Iview2](https://github.com/iview/iview)
 - [VueMarkdown](https://github.com/miaolz123/vue-markdown)
 - [MarkdownEditor](https://github.com/alecgorge/MarkdownEditor) y [Vue-SimpleMDE](https://github.com/Float/vue-simplemde)
