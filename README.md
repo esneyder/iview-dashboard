@@ -58,14 +58,12 @@ Forma - form.vue // formulario
 Al mismo tiempo que
 --------------
 
-### Vista previa de la captura de pantalla
-![1] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s1.png)
+### Capturas de pantalla
 
-![2] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s2.png)
-
-![3] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s3.png)
-
-![4] (https://github.com/itamaradin15/iview-dashboard/raw/master/static/screenshots/s4.png)
+![1](/static/screenshots/s1.png)
+![2](/static/screenshots/s2.png)
+![3](/static/screenshots/s3.png)
+![4](/static/screenshots/s4.png)
 
 ----------------
 ### Problemas y instrucciones de mantenimiento
