@@ -5,7 +5,7 @@
 !.postcssrc.js
 */.DS_Store
 node_modules/
-#dist/
+dist/
 .idea/
 package-lock.json
 *.iml
