@@ -51,12 +51,12 @@ npm run build        // producción
 ----------------
 
 ### Dependencias
-- [x] página: [iView2.0](https://github.com/iview/iview)
-- [x] Visualización de Markdown: [VueMarkdown](https://github.com/miaolz123/vue-markdown)
-- [x] Editor de Markdown: [MarkdownEditor](https://github.com/alecgorge/MarkdownEditor) y [Vue-SimpleMDE](https://github.com/Float/vue-simplemde)
-- [x] cuadro de texto enriquecido: [quillEditor](https://github.com/surmon-china/vue-quill-editor)
-- [x] Gráfico: [Eqarts Baidu](http://echarts.baidu.com) y [Vue-Echarts](https://github.com/xlsdg/vue-echarts-v3)
-- [x] carga de archivo: [uso iView propio componente de carga de archivos](https://www.iviewui.com/components/upload)
+- [Iview2](https://github.com/iview/iview)
+- [VueMarkdown](https://github.com/miaolz123/vue-markdown)
+- [MarkdownEditor](https://github.com/alecgorge/MarkdownEditor) y [Vue-SimpleMDE](https://github.com/Float/vue-simplemde)
+- [QuillEditor](https://github.com/surmon-china/vue-quill-editor)
+- [Eqarts Baidu](http://echarts.baidu.com) y [Vue-Echarts](https://github.com/xlsdg/vue-echarts-v3)
+- [Iview uploads](https://www.iviewui.com/components/upload)
 
 ----------------
 
