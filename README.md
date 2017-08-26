@@ -1,85 +1,85 @@
-# iview2-manage-system
+# Iview2-manage-system
 
-基于Vue2 + iView2.0的后台管理系统解决方案简单示例.
+Un ejemplo sencillo de una solución de sistema de gestión de fondo basada en Vue2 + iView2.0.
 
-线上访问(不支持手机 / 已修复访问速度过慢的问题)：[电脑访问](http://139.199.33.111/dist)
-
---------------
-
-### Notice
-* 6.4 因为精力有限，决定本项目不再维护，但其仍然是可用的，如需实际应用还请关注iview官网了解API变动。十分抱歉！
+Acceso en línea (no es compatible con el teléfono / ha sido lento para reparar el problema): [acceso a computadora] (http://139.199.33.111/dist)
 
 --------------
 
-### 目前实现的功能及用到的组件
-- [x] 页面： [iView2.0](https://github.com/iview/iview)
-- [x] Markdown显示： [VueMarkdown](https://github.com/miaolz123/vue-markdown)
-- [x] Markdown编辑器： [MarkdownEditor](https://github.com/alecgorge/MarkdownEditor)&amp[Vue-SimpleMDE](https://github.com/F-loat/vue-simplemde)
-- [x] 富文本框： [quillEditor](https://github.com/surmon-china/vue-quill-editor)
-- [x] 图表： [百度Echarts](http://echarts.baidu.com)&amp[Vue-Echarts](https://github.com/xlsdg/vue-echarts-v3)
-- [x] 文件上传： [使用iView自带的文件上传组件](https://www.iviewui.com/components/upload)
+### Aviso
+* 6.4 porque la energía es limitada, decidió dejar de mantener el proyecto, pero todavía está disponible, para aplicaciones prácticas, por favor, preste atención a iview sitio web oficial para comprender los cambios API. ¡Lo siento!
 
 --------------
 
-### 使用
-```
-npm i               // 安装依赖
-npm run dev         // 本地开发
-npm run build       // 生产部署
-```
+### La implementación actual de la función y el uso de componentes
+- [x] página: [iView2.0] (https://github.com/iview/iview)
+- [x] Visualización de Markdown: [VueMarkdown] (https://github.com/miaolz123/vue-markdown)
+- [x] Editor de Markdown: [MarkdownEditor] (https://github.com/alecgorge/MarkdownEditor) y [Vue-SimpleMDE] (https://github.com/F-loat/vue-simplemde)
+- [x] cuadro de texto enriquecido: [quillEditor] (https://github.com/surmon-china/vue-quill-editor)
+- [x] Gráfico: [Eqarts Baidu] (http://echarts.baidu.com) y [Vue-Echarts] (https://github.com/xlsdg/vue-echarts-v3)
+- [x] carga de archivo: [uso iView propio componente de carga de archivos] (https://www.iviewui.com/components/upload)
+
 --------------
 
-### 目录结构
-	|-- build                                  // webpack配置文件
-	|-- config                                 // 项目打包路径
-	|-- static                                 // 静态文件目录
-	|-- src                                    // 源码目录
-	|   |-- components                         // 组件
-	|       |-- common                         // 全局
-	|           |-- about.vue                  // 关于页面
-	|           |-- index.vue                  // 入口
-	|           |-- login.vue                  // 登录页面
-	|   	|-- page                           // 主要页面
-	|           |-- eharts.vue                 // 百度echarts
-	|           |-- form.vue                   // 表单
-	|           |-- rtf.vue                    // 富文本框
-	|           |-- markdown-viewer.vue        // markdown显示
-	|           |-- markdown-editor.vue        // markdown编辑器
-	|           |-- table.vue                  // 表格
-	|           |-- upload.vue                 // 文件上传
-	|   |-- App.vue                            // 页面入口
-	|   |-- main.js                            // 程序入口
-	|-- .babelrc                               // ES6语法编译配置
-	|-- .editorconfig                          // 代码编写规格
-	|-- .gitignore                             // push忽略文件
-	|-- index.html                             // 入口html页面
-	|-- package.json                           // 依赖及配置
-	|-- README.md                              // 简介
-	
+### uso
+¡Bienvenido!
+Npm i // instala dependencias
+Npm run dev // desarrollo local
+Npm run build // implementación de producción
+¡Bienvenido!
 --------------
 
-### 截图预览
-![1](https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s1.png)
+### estructura de directorios
+| - build // archivo de configuración de webpack
+| --config // ruta del paquete del proyecto
+Directorio estático de archivos estáticos
+| - src // directorio de fuentes
+| - componentes // componentes
+| - comunes // globales
+Acerca de la página
+| -.
+| - login.vue // página de inicio de sesión
+La página principal
+Eharts.vue // baidu echarts
+Forma - form.vue // formulario
+| Rtf.vue // cuadro de texto enriquecido
+| Markdown-viewer.vue // exhibición de markdown
+- markdown-editor.vue // editor de markdown
+| - tablas
+| - upload.vue // archivo de carga
+| - App.vue // entrada de página
+| - main.js // entrada del programa
+| - .babelrc // ES6 Configuración de la compilación de sintaxis
+| .editorconfig // código para escribir especificaciones
+| - .gitignore // push Ignora los archivos
+| - index.html // entrada página html
+| - package.json // dependencias y configuración
+| - README.md // Introducción
+Al mismo tiempo que
+--------------
 
-![2](https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s2.png)
+Vista previa de la captura de pantalla ###
+! [1] (https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s1.png)
 
-![3](https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s3.png)
+! [2] (https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s2.png)
+
+[3] (https://github.com/vanishcode/iview2-management-system/raw/master/static/screenshots/s3.png)
 
 ----------------
 
-### 存在的问题及维护说明
-1.字体路径有错误，下次更新将会修复
+### Problemas y instrucciones de mantenimiento
+1. La ruta de la fuente es incorrecta y la próxima actualización será fija
 
-2.本项目只是简单示例，实际应用还需自行添加需要实现的功能
+2. Este proyecto es sólo un ejemplo simple, la aplicación real también debe agregar la necesidad de lograr la función
 
-3.部分内容参考了 [Vue2 后台管理系统解决方案](https://github.com/lin-xin/manage-system)
-
----------------
-
-### 其他
-有任何问题或建议欢迎提出issue.
+3. Parte de la referencia a [Vue2 backstage management system solutions] (https://github.com/lin-xin/manage-system)
 
 ---------------
 
-### License
-[MIT](https://opensource.org/licenses/MIT)
+### otro
+Tenga cualquier pregunta o sugerencia bienvenida a la edición del problema.
+
+---------------
+
+### Licencia
+[MIT] (https://opensource.org/licenses/MIT)

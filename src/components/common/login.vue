@@ -29,7 +29,7 @@
 
 <div class="wrapper">
 <h1>
-后台管理系统
+  Sistema de gestión de fondo
 </h1>
     <div class="login">
         <i-form ref="formInline" :model="formInline" :rules="ruleInline">
@@ -40,7 +40,7 @@
                 <Input v-model="formInline.password" type="password"></Input>
             </Form-item>
             <Form-item>
-                <i-button type="success" @click.native="handleSubmit('formInline')" long>登录</i-button>
+                <i-button type="success" @click.native="handleSubmit('formInline')" long>Iniciar sesión</i-button>
             </Form-item>
         </i-form>
     </div>
@@ -60,17 +60,17 @@ export default {
                 ruleInline: {
                     user: [{
                         required: true,
-                        message: '请填写用户名',
+                        message: 'Por favor, rellene el nombre de usuario',
                         trigger: 'blur'
                     }],
                     password: [{
                         required: true,
-                        message: '请填写密码',
+                        message: 'Por favor, introduzca su contraseña',
                         trigger: 'blur'
                     }, {
                         type: 'string',
                         min: 6,
-                        message: '密码长度不能小于6位',
+                        message: 'La longitud de la contraseña no puede ser inferior a 6 dígitos',
                         trigger: 'blur'
                     }]
                 }
@@ -80,16 +80,16 @@ export default {
             handleSubmit(name) {
                     this.$refs[name].validate((valid) => {
                         if (valid) {
-                            this.$Message.success('提交成功!');
+                            this.$Message.success('¡Envío éxitoso!');
                             this.$router.push('/about');
                         } else {
-                            this.$Message.error('表单验证失败!');
+                            this.$Message.error('Error en la validación de formularios!');
                         }
                     })
                 },
-                handleReset(val) {
-                    console.log(val)
-                }
+            handleReset(val) {
+                console.log(val)
+            }
         }
 }
 
