@@ -3,12 +3,17 @@ Un ejemplo sencillo de dashboard basada en Vue2 + iView2.0.
 [Demo](https://iview-dashboard.herokuapp.com)
 
 ----------------
+## Instalacion
+``` bash
+# instalar las dependencias
+npm install
 
-### Instalacion
-```
-npm install          // instala las dependencias
-npm run dev          // desarrollo
-npm run build        // producción
+# servidor con hot reload en localhost:8080
+npm run dev
+
+# build para produccion se almacena en la carpeta dist
+npm run build
+
 ```
 ----------------
 
